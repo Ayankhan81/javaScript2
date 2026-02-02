@@ -10,7 +10,7 @@ console.log(document.body); // it will return body of html
 console.dir(document.body); // properties of body
 
 // ! DOM Manipulation
-console.log("=============DOM Manipulatio===========");
+console.log("=============DOM Manipulation===========");
 
 /**
  * 1. selecting by id 
@@ -55,5 +55,18 @@ let elementAll=document.querySelectorAll("h1");
 console.dir(elementAll);
 
 
+// ! Properties
+/**
+ * These properties is used to access the element or to change the value of that element
+ * 
+ * tagName:- returns tag for element nodes
+ * innerText:- returns the texts content of the element and all it's children
+ *     innerText me sirf text return hota h
+ * innerHTML:- returns the plain text or html ccontent in tthe element
+ *          innerHTML me tag ke sath content return hota h
+ * textContent:- returns textual content even for hidden element
+ */
 
+let heading =document.querySelector("h3")
+// console.log(heading);
 
