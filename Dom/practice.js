@@ -20,3 +20,31 @@ for(div of divs){
    idx++;
     
 } 
+
+console.log("=========Practice Question==========");
+
+/*create a new button element give it a text "click me " background color of red & text color of white.
+insert the button as the first element inside the body tag */
+
+let newButton=document.createElement("button")
+newButton.innerText="ClickMe";
+console.log(newButton);
+
+document.querySelector("body").prepend(newButton);
+newButton.style.backgroundColor="red"
+newButton.style.color="white"
+
+
+console.log("======Practice question 2");
+
+/*
+
+*/
+
+let newpara=document.querySelector("p")
+console.log(newpara.getAttribute("class"));
+// console.log(newpara.setAttribute("class", "newClass")); it will overwrite the attribute and change the previous used property
+ 
+newpara.classList.add("newClass");
+
+

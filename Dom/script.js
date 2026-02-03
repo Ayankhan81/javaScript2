@@ -100,4 +100,40 @@ console.log(att.setAttribute("class","new-Design"));
 let divbox=document.querySelector("div")
 
 div.style.backgroundColor="yellow"
-div.style.fontSize="40px"
+div.style.fontSize="20px"
+
+
+// ! Inserting Elements
+
+let newbtn=document.createElement("button")
+newbtn.innerText="Click here"
+console.log(newbtn);
+
+/*
+there are four method two add element in js
+node.append(el)  // adds at the end of node(inside)
+node.prepend(el)  // adds at the start of node (inside)
+node.before(el)  // adds before the node (outside)
+node.after(el)   // adds after the node (outside)
+
+-------for deletion------
+node.remove(el)
+ */
+let div1=document.querySelector("div")
+div.append(newbtn);
+  
+div.prepend(newbtn);
+
+div.before(newbtn)
+
+div.after(newbtn)
+
+
+let newHeading=document.createElement("h1")
+newHeading.innerText="Ayankhan";
+
+document.querySelector("body").before(newHeading)
+
+newHeading.remove(); // it will delete the new heading 
+
+                    
