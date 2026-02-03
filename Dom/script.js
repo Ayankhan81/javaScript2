@@ -70,3 +70,34 @@ console.dir(elementAll);
 let heading =document.querySelector("h3")
 // console.log(heading);
 
+// ! Dom Manipulation Part2
+console.log("-============DOM PArt 2=====");
+
+// Attributes
+
+/* getAttribute(attr);// to get the attribute value
+setAttribute(attr, value); // To set teh attributes value th
+*/
+
+// ! get Attribute
+
+let div=document.querySelector("div")
+console.log(div);
+
+let id=div.getAttribute("id")
+console.log(id);
+
+let att=document.querySelector("h2")
+console.log(att.getAttribute("class"));
+
+// ! setAttribute
+let set=document.querySelector("h2")
+console.log(att.setAttribute("class","new-Design"));
+
+
+// ! nodes.style
+
+let divbox=document.querySelector("div")
+
+div.style.backgroundColor="yellow"
+div.style.fontSize="40px"
